@@ -4,9 +4,99 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Start Here | USU Pre-PA Club</title>
-  <meta name="description" content="Getting started as a Pre-PA student at USU" />
+  <meta name="description" content="Start Here resources for Pre-PA students at USU" />
 
-  <!-- COPY the <style> block from index.html and paste it here -->
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eaf0ff;
+      --muted:#b9c6ff;
+      --accent:#7aa7ff;
+      --border:rgba(255,255,255,.12);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:radial-gradient(1000px 600px at 15% 0%, #172a52, var(--bg));
+      color:var(--text);
+    }
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{
+      position:sticky;top:0;
+      background:rgba(11,18,32,.8);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+      z-index:5;
+    }
+
+    header .wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+
+    .brand{font-weight:800;font-size:18px}
+
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--text);
+    }
+    nav a:hover{background:rgba(255,255,255,.06)}
+
+    h1{font-size:38px;margin:0 0 10px}
+    h2{font-size:26px;margin:0 0 10px}
+    h3{margin:0 0 8px}
+
+    p{color:rgba(234,240,255,.9)}
+
+    section{padding:24px 0}
+
+    .card{
+      background:rgba(15,26,51,.8);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+
+    .grid{
+      display:grid;
+      gap:14px;
+    }
+
+    .grid.two{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .mini{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      margin-top:24px;
+      padding:24px 0;
+      color:rgba(234,240,255,.7);
+    }
+
+    @media (max-width:900px){
+      .grid.two{grid-template-columns:1fr}
+      h1{font-size:32px}
+    }
+  </style>
 </head>
 
 <body>
@@ -26,16 +116,77 @@
 
 <main class="wrap">
 
-<h1>Start Here</h1>
+<section>
+  <h1>Start Here</h1>
+  <p class="mini">
+    These are the basics every Pre-PA student should understand early. Keep it simple, start organized,
+    and double-check requirements on each program’s website.
+  </p>
+</section>
 
-<!-- 🔽 PASTE your entire “Start Here” section here -->
-<!-- (CASPA timeline, PCE vs HCE, Common Mistakes, Letters) -->
+<section>
+  <h2>PA Application Basics</h2>
 
-</main>
+  <div class="grid two">
+    <div class="card">
+      <h3>1) CASPA Timeline (Typical Cycle)</h3>
+      <ul>
+        <li><strong>Fall–Winter (year before):</strong> Research programs, confirm prereqs, start tracking hours.</li>
+        <li><strong>Spring:</strong> Request letters (6–8 weeks ahead), draft personal statement, update resume.</li>
+        <li><strong>Late April:</strong> CASPA opens (many programs begin accepting submissions).</li>
+        <li><strong>May–June:</strong> Submit early when possible (verification + rolling admissions matter).</li>
+        <li><strong>Summer–Fall:</strong> Supplemental apps + interviews.</li>
+        <li><strong>Fall–Winter:</strong> Decisions + deposits (timeline varies by program).</li>
+      </ul>
+      <p class="mini">
+        Tip: “Early” usually means <strong>within the first 4–6 weeks</strong> after CASPA opens.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>2) PCE vs HCE (Know the difference)</h3>
+      <p>Programs categorize experience differently. Always check each program’s definitions.</p>
+      <ul>
+        <li><strong>PCE (Patient Care Experience):</strong> Direct, hands-on patient care (examples: CNA/PCT, EMT, MA, phlebotomy, ER tech).</li>
+        <li><strong>HCE (Health Care Experience):</strong> Health setting experience that may be less hands-on (examples: scribing, unit clerk/front desk, some volunteer roles).</li>
+      </ul>
+      <p class="mini">
+        Tip: Track your hours as you go (date, role, site, supervisor, total hours). Don’t try to rebuild it later.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3) Common Application Mistakes</h3>
+      <ul>
+        <li>Not confirming prereqs for each program (they vary more than people think).</li>
+        <li>Waiting too long to ask for letters of recommendation.</li>
+        <li>Submitting CASPA late and losing rolling-admissions advantage.</li>
+        <li>Not tracking hours consistently (PCE/HCE/shadowing).</li>
+        <li>Personal statement that’s too generic (only “I want to help people”).</li>
+      </ul>
+      <p class="mini">Tip: Your application should show <strong>growth + evidence</strong>, not just interest.</p>
+    </div>
+
+    <div class="card">
+      <h3>4) Letters of Recommendation (Quick Guide)</h3>
+      <ul>
+        <li><strong>Who to ask:</strong> A PA/physician you worked with, a direct supervisor, and/or a professor (varies by program).</li>
+        <li><strong>Ask early:</strong> Give at least <strong>6–8 weeks</strong>.</li>
+        <li><strong>Make it easy:</strong> Send your resume, draft personal statement, and a short list of points you hope they can speak to.</li>
+        <li><strong>Follow up:</strong> Polite reminder 1–2 weeks before the deadline.</li>
+      </ul>
+      <p class="mini">
+        Tip: Strong letters come from people who can describe your work habits and patient care—not just that you’re “nice.”
+      </p>
+    </div>
+  </div>
+</section>
 
 <footer>
   <p>© <span id="year"></span> USU Pre-PA Club</p>
 </footer>
+
+</main>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
