@@ -1,7 +1,190 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="start-here.html">Start Here</a>
-  <a href="resources.html">Resources</a>
-  <a href="officers.html">Officers</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Officers | USU Pre-PA Club</title>
+  <meta name="description" content="Meet the officers of the USU Pre-PA Club" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eaf0ff;
+      --muted:#b9c6ff;
+      --accent:#7aa7ff;
+      --border:rgba(255,255,255,.12);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:radial-gradient(1000px 600px at 15% 0%, #172a52, var(--bg));
+      color:var(--text);
+    }
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{
+      position:sticky;top:0;
+      background:rgba(11,18,32,.8);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+      z-index:5;
+    }
+
+    header .wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+
+    .brand{font-weight:800;font-size:18px}
+
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--text);
+    }
+    nav a:hover{background:rgba(255,255,255,.06)}
+
+    h1{font-size:38px;margin:0 0 10px}
+    h2{font-size:26px;margin:0 0 10px}
+    h3{margin:0 0 8px}
+
+    p{color:rgba(234,240,255,.9)}
+
+    section{padding:24px 0}
+
+    .card{
+      background:rgba(15,26,51,.8);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+
+    .grid{
+      display:grid;
+      gap:14px;
+    }
+
+    .grid.two{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .mini{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      margin-top:24px;
+      padding:24px 0;
+      color:rgba(234,240,255,.7);
+    }
+
+    @media (max-width:900px){
+      .grid.two{grid-template-columns:1fr}
+      h1{font-size:32px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">USU Pre-PA Club</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="resources.html">Resources</a>
+      <a href="officers.html">Officers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h1>Meet the Officers</h1>
+  <p class="mini">
+    USU Pre-PA Club leadership for the 2024–2025 academic year.
+  </p>
+</section>
+
+<section>
+
+  <div class="grid two">
+
+    <div class="card">
+      <h3>President</h3>
+      <p>
+        Gracie Findley<br>
+        <a href="mailto:gracie.findley@usu.edu">gracie.findley@usu.edu</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Vice President</h3>
+      <p>
+        Ashtyn Whatcott<br>
+        <a href="mailto:ashtyn.whatcott@usu.edu">ashtyn.whatcott@usu.edu</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Secretary</h3>
+      <p>
+        Corbin Spencer<br>
+        <a href="mailto:a02338973@usu.edu">a02338973@usu.edu</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Treasurer</h3>
+      <p>
+        Brookelynn Dyer<br>
+        <a href="mailto:brookelynn.dyer@usu.edu">brookelynn.dyer@usu.edu</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Community Outreach</h3>
+      <p>
+        Keaton Jensen
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Volunteer Coordinator</h3>
+      <p>
+        Savannah Hess
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> USU Pre-PA Club</p>
+</footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
