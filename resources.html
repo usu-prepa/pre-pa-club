@@ -1,7 +1,258 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="start-here.html">Start Here</a>
-  <a href="resources.html">Resources</a>
-  <a href="officers.html">Officers</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources | USU Pre-PA Club</title>
+  <meta name="description" content="Resources for PA school applicants in the USU Pre-PA Club" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eaf0ff;
+      --muted:#b9c6ff;
+      --accent:#7aa7ff;
+      --border:rgba(255,255,255,.12);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:radial-gradient(1000px 600px at 15% 0%, #172a52, var(--bg));
+      color:var(--text);
+    }
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{
+      position:sticky;top:0;
+      background:rgba(11,18,32,.8);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+      z-index:5;
+    }
+
+    header .wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+
+    .brand{font-weight:800;font-size:18px}
+
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--text);
+    }
+    nav a:hover{background:rgba(255,255,255,.06)}
+
+    h1{font-size:38px;margin:0 0 10px}
+    h2{font-size:26px;margin:0 0 10px}
+    h3{margin:0 0 8px}
+
+    p{color:rgba(234,240,255,.9)}
+
+    section{padding:24px 0}
+
+    .card{
+      background:rgba(15,26,51,.8);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+
+    .grid{
+      display:grid;
+      gap:14px;
+    }
+
+    .grid.two{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .mini{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      margin-top:24px;
+      padding:24px 0;
+      color:rgba(234,240,255,.7);
+    }
+
+    @media (max-width:900px){
+      .grid.two{grid-template-columns:1fr}
+      h1{font-size:32px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">USU Pre-PA Club</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="resources.html">Resources</a>
+      <a href="officers.html">Officers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h1>Resources</h1>
+  <p class="mini">
+    Advising, planning tools, shadowing, service opportunities, and application resources.
+  </p>
+</section>
+
+<section>
+
+  <div class="card">
+    <h3>Advising</h3>
+    <p>
+      <strong>Anya Hawke</strong> —
+      <a href="mailto:anya.hawke@usu.edu">anya.hawke@usu.edu</a>
+    </p>
+    <p>
+      Anya is the USU Pre-PA Health Advisor. She can help you strengthen your
+      application, plan prerequisite coursework, and navigate PA career planning.
+    </p>
+    <ul>
+      <li>
+        <a href="https://advisingam.usu.edu/ramonline/Appointment?AGID=175&P=76&_ga=2.10867124.1054716881.1612815825-99135261.1579418867"
+           target="_blank" rel="noopener">
+          Schedule an advising appointment
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>PA Application Workshops</h3>
+    <p>
+      Anya hosts PA application workshops throughout the year covering CASPA,
+      personal statements, and application strategy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Making YOUR Plan</h3>
+    <p>
+      Every PA school has different requirements. Research each program
+      you are interested in and create a personalized plan for prerequisites,
+      experience hours, letters, and deadlines.
+    </p>
+    <p>
+      Many students use spreadsheets to compare programs side-by-side.
+      Always verify information directly with each school.
+    </p>
+
+    <p>
+      <a href="https://usu.instructure.com/courses/433110/files/64205128/download?download_frd=1"
+         target="_blank" rel="noopener">
+        Download the Example Planning Spreadsheet
+      </a>
+    </p>
+
+    <p class="mini">
+      Note: This link requires a USU Canvas login.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>PA Shadowing Opportunities (Cache Valley)</h3>
+    <p class="mini">Compiled February 2014. Availability may change.</p>
+
+    <ul>
+      <li><strong>Alpine Orthopedic Specialists</strong> — 435-787-2000</li>
+      <li><strong>Cache Valley Dermatology</strong> — Jeff Baugh</li>
+      <li><strong>Cache Valley ENT</strong> — Lindsay Humes</li>
+      <li><strong>Cache Valley Community Health Center</strong></li>
+      <li><strong>Rocky Mountain Dermatology</strong></li>
+      <li><strong>Logan Regional / Budge Clinic (IHC)</strong></li>
+    </ul>
+
+    <p>
+      For additional shadowing advice:
+      <a href="mailto:anya.hawke@usu.edu">anya.hawke@usu.edu</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Service & Volunteering</h3>
+    <p>
+      Service adds depth to your application. Focus on meaningful experiences
+      and personal growth.
+    </p>
+    <p>
+      <a href="https://usu.givepulse.com/" target="_blank" rel="noopener">Aggie Give Pulse</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>PA Schools</h3>
+    <p>
+      Start your program research with the PAEA directory, then confirm details
+      on individual school websites.
+    </p>
+    <p>
+      <a href="https://paeaonline.org/program-directory" target="_blank" rel="noopener">
+        PAEA Program Directory
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Interviews</h3>
+    <p>Prepare early for interviews by reviewing common PA interview questions.</p>
+    <p>
+      <a href="https://www.thepalife.com/the-top-46-physician-assistant-applicant-interview-questions/"
+         target="_blank" rel="noopener">
+        Common PA Interview Questions
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Personal Statements</h3>
+    <p>Starting early makes the application process much easier.</p>
+    <p>
+      <a href="https://www.thepalife.com/31-physician-assistant-personal-statement-examples/"
+         target="_blank" rel="noopener">
+        Personal Statement Examples & Critiques
+      </a>
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© <span id="year"></span> USU Pre-PA Club</p>
+</footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
