@@ -1,2 +1,308 @@
 # pre-pa-club
 Pre-PA Club website and application resources
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pre-PA Club | Utah State University</title>
+  <meta name="description" content="Pre-PA Club resources: CASPA, timelines, prerequisites, PCE, shadowing, essays, and interview prep." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f1a33; --text:#eaf0ff; --muted:#b9c6ff;
+      --accent:#7aa7ff; --accent2:#7dffcc; --border:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1000px 600px at 15% 0%, #172a52, var(--bg));color:var(--text);}
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;background:rgba(11,18,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:5}
+    header .wrap{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+    .badge{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{opacity:.9;text-decoration:none;padding:8px 10px;border-radius:10px}
+    nav a:hover{background:rgba(255,255,255,.06)}
+    .hero{padding:48px 0 24px}
+    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}
+    h1{font-size:42px;line-height:1.05;margin:0 0 10px}
+    p{margin:0 0 12px;color:rgba(234,240,255,.88)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:700}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),#4f79ff);border:none;color:#081226}
+    .btn:hover{transform:translateY(-1px)}
+    .card{background:rgba(15,26,51,.75);border:1px solid var(--border);border-radius:18px;padding:16px}
+    .mini{color:var(--muted);font-size:14px}
+    section{padding:22px 0}
+    .grid{display:grid;gap:14px}
+    .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:12px;margin-bottom:8px}
+    h2{margin:0 0 10px;font-size:26px}
+    h3{margin:0 0 8px}
+    ul{margin:10px 0 0 18px;color:rgba(234,240,255,.88)}
+    li{margin:6px 0}
+    .pill{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);color:rgba(234,240,255,.9)}
+    footer{border-top:1px solid var(--border);margin-top:18px;padding:24px 0;color:rgba(234,240,255,.75)}
+    @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} .grid.two,.grid.three{grid-template-columns:1fr} h1{font-size:34px}}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="badge" aria-hidden="true"></div>
+        <div>
+          Pre-PA Club <span class="mini">| Utah State University</span>
+        </div>
+      </div>
+      <nav aria-label="primary">
+        <a href="#join">Join</a>
+        <a href="#events">Events</a>
+        <a href="#apply">Apply to PA School</a>
+        <a href="#resources">Helpful Links</a>
+        <a href="#officers">Officers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">Pre-PA Club</div>
+          <h1>Your one-stop hub for PA school prep.</h1>
+          <p>
+            We help students plan prerequisites, build strong PCE/shadowing, write solid CASPA materials,
+            and walk into interviews confident — plus we run events that connect you with real PAs.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#join">Join the club</a>
+            <a class="btn" href="#apply">Start your application plan</a>
+            <a class="btn" href="#resources">Browse resources</a>
+          </div>
+          <p class="mini" style="margin-top:10px;">
+            Tip: Bookmark this site and use the checklist in the Apply section.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Next Event</h3>
+          <p class="mini">Update this block every week.</p>
+          <p><strong>[Event Name]</strong><br/>[Day, Month ##] • [Time] • [Location]</p>
+          <a class="btn" href="[RSVP_LINK_HERE]">RSVP</a>
+          <div style="margin-top:10px" class="mini">
+            Or see the full calendar below.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="kicker">Join</div>
+      <h2>Membership</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>How to join</h3>
+          <ul>
+            <li>Pay dues: <strong>$[amount]</strong> (Venmo: <strong>@[handle]</strong>)</li>
+            <li>Fill out the member form: <a href="[GOOGLE_FORM_LINK]">[link]</a></li>
+            <li>Follow Instagram: <a href="[INSTAGRAM_LINK]">@[handle]</a></li>
+          </ul>
+          <p class="mini">Add your QR codes here for Venmo + form.</p>
+        </div>
+        <div class="card">
+          <h3>What you get</h3>
+          <ul>
+            <li>PA panels + Q&amp;A, networking</li>
+            <li>Workshops: CASPA, essays, interviews</li>
+            <li>Clinical hours tips + shadowing help</li>
+            <li>Members-only resources &amp; templates</li>
+          </ul>
+          <span class="pill">New members welcome anytime</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="kicker">Events</div>
+      <h2>Calendar + Upcoming</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Upcoming events</h3>
+          <ul>
+            <li><strong>[Workshop]</strong> — [date/time]</li>
+            <li><strong>[Panel]</strong> — [date/time]</li>
+            <li><strong>[Suture clinic]</strong> — [date/time]</li>
+          </ul>
+          <p class="mini">Link each event to an RSVP form or AggieSync page.</p>
+        </div>
+        <div class="card">
+          <h3>Google Calendar embed</h3>
+          <p class="mini">Paste your calendar embed iframe here.</p>
+          <div style="border:1px dashed var(--border);padding:14px;border-radius:14px">
+            <code class="mini">&lt;iframe src="..."&gt;&lt;/iframe&gt;</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="kicker">Apply to PA School</div>
+      <h2>How to build a strong application</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>1) Prereqs + planning</h3>
+          <ul>
+            <li>List programs you’re interested in early.</li>
+            <li>Make a prereq map by semester.</li>
+            <li>Keep a GPA tracker.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>2) PCE / HCE hours</h3>
+          <ul>
+            <li>Track hours weekly (job + volunteering).</li>
+            <li>Know the difference: PCE vs HCE varies by program.</li>
+            <li>Quality + consistency &gt; random hours.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>3) Shadowing</h3>
+          <ul>
+            <li>Shadow multiple specialties if possible.</li>
+            <li>Keep a log: date, PA name, specialty, hours, what you learned.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>4) Letters of recommendation</h3>
+          <ul>
+            <li>Ask early (6–8+ weeks).</li>
+            <li>Give them your resume + draft PS + deadlines.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>5) CASPA</h3>
+          <ul>
+            <li>Order transcripts early.</li>
+            <li>Double-check experiences: dates + hours + supervisor info.</li>
+            <li>Submit sooner rather than later when possible.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>6) Personal statement + interviews</h3>
+          <ul>
+            <li>Answer: Why PA? Why now? Why you?</li>
+            <li>Practice MMI + traditional questions out loud.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>Suggested timeline (edit to match your school)</h3>
+        <ul>
+          <li><strong>Freshman/Sophomore:</strong> prereqs + start PCE + join club</li>
+          <li><strong>Junior:</strong> ramp PCE + shadowing + start PS drafts</li>
+          <li><strong>Spring before applying:</strong> finalize school list, LOR requests</li>
+          <li><strong>CASPA open → submit:</strong> transcripts, entries, submit early</li>
+        </ul>
+        <p class="mini">Add a downloadable checklist + hour tracking sheet link here.</p>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="kicker">Helpful links</div>
+      <h2>Resource library</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Official</h3>
+          <ul>
+            <li><a href="[PAEA_LINK]">PAEA (profession + info)</a></li>
+            <li><a href="[CASPA_LINK]">CASPA</a></li>
+            <li><a href="[PROGRAM_DIRECTORY_LINK]">PA Program Directory</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Essays + CASPA help</h3>
+          <ul>
+            <li><a href="[PERSONAL_STATEMENT_GUIDE_LINK]">Personal statement guide</a></li>
+            <li><a href="[EXPERIENCE_DESCRIPTIONS_LINK]">Experience descriptions tips</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Interview prep</h3>
+          <ul>
+            <li><a href="[MMI_LINK]">MMI practice resources</a></li>
+            <li><a href="[COMMON_QUESTIONS_LINK]">Common PA interview questions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mini" style="margin-top:10px;">
+        If you want, add a “recommended podcasts/books” section too.
+      </p>
+    </section>
+
+    <section id="officers">
+      <div class="kicker">Leadership</div>
+      <h2>Officer team</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>[President Name]</h3>
+          <p class="mini">President • email: [email]</p>
+          <p>What they handle: partnerships, speakers, big-picture planning.</p>
+        </div>
+        <div class="card">
+          <h3>[Treasurer Name]</h3>
+          <p class="mini">Treasurer • email: [email]</p>
+          <p>What they handle: membership, budgets, fundraising, reimbursements.</p>
+        </div>
+        <div class="card">
+          <h3>[VP Name]</h3>
+          <p class="mini">Vice President • email: [email]</p>
+          <p>What they handle: events, volunteer signups, workshop scheduling.</p>
+        </div>
+        <div class="card">
+          <h3>[Social/Outreach Name]</h3>
+          <p class="mini">Outreach • email: [email]</p>
+          <p>What they handle: Instagram, promotions, community connections.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="kicker">Contact</div>
+      <h2>Questions? Reach out.</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Quick contacts</h3>
+          <ul>
+            <li>Email: <a href="mailto:[clubemail]">[clubemail]</a></li>
+            <li>Instagram: <a href="[INSTAGRAM_LINK]">@[handle]</a></li>
+            <li>Interest form: <a href="[FORM_LINK]">[link]</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Anonymous Q&amp;A</h3>
+          <p>Drop questions anytime (CASPA, PCE, interviews, anything).</p>
+          <a class="btn" href="[ANON_FORM_LINK]">Submit anonymously</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <div>© <span id="year"></span> Pre-PA Club | Utah State University</div>
+        <div class="mini">Built by the Pre-PA Club team. Update links and event info weekly.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
