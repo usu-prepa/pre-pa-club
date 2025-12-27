@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | USU Pre-PA Club</title>
+  <meta name="description" content="Contact the USU Pre-PA Club" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eaf0ff;
+      --muted:#b9c6ff;
+      --accent:#7aa7ff;
+      --border:rgba(255,255,255,.12);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:radial-gradient(1000px 600px at 15% 0%, #172a52, var(--bg));
+      color:var(--text);
+    }
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{
+      position:sticky;top:0;
+      background:rgba(11,18,32,.85);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+      z-index:5;
+    }
+
+    header .wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+
+    .brand{font-weight:800;font-size:18px}
+
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--text);
+    }
+    nav a:hover{background:rgba(255,255,255,.06)}
+
+    h1{font-size:38px;margin:0 0 10px}
+    h2{font-size:26px;margin:0 0 10px}
+    h3{margin:0 0 8px}
+
+    p{color:rgba(234,240,255,.9)}
+
+    section{padding:24px 0}
+
+    .card{
+      background:rgba(15,26,51,.85);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+
+    .grid{
+      display:grid;
+      gap:14px;
+    }
+
+    .grid.two{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .mini{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      margin-top:24px;
+      padding:24px 0;
+      color:rgba(234,240,255,.7);
+    }
+
+    @media (max-width:900px){
+      .grid.two{grid-template-columns:1fr}
+      h1{font-size:32px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">USU Pre-PA Club</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="resources.html">Resources</a>
+      <a href="officers.html">Officers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h1>Contact Us</h1>
+  <p>
+    Have questions about the Pre-PA Club or want to get involved?
+    We’re happy to help point you in the right direction.
+  </p>
+</section>
+
+<section>
+  <div class="grid two">
+
+    <div class="card">
+      <h3>Email</h3>
+      <p>
+        For general questions, email the Pre-PA Club:
+      </p>
+      <p>
+        <a href="mailto:anya.hawke@usu.edu">anya.hawke@usu.edu</a>
+      </p>
+      <p class="mini">
+        Please allow a few days for a response during the semester.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Instagram</h3>
+      <p>
+        Follow us for event updates and reminders:
+        <strong>@usuprepaclub</strong>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/usuprepaclub/" target="_blank" rel="noopener">
+          Visit Instagram →
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>MyUSU</h3>
+      <p>
+        Join the <strong>Pre-Physician Assistant Club</strong> page in MyUSU
+        for official announcements and club information.
+      </p>
+      <p class="mini">
+        Search “Pre-Physician Assistant Club” in MyUSU and follow the page.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Advising Questions</h3>
+      <p>
+        Questions about prerequisites, course planning, or PA school advising
+        should be directed to the USU Pre-PA Health Advisor.
+      </p>
+      <p class="mini">
+        Advising details can be found on the Resources page.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> USU Pre-PA Club</p>
+</footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
